@@ -291,8 +291,13 @@ $(function() {
   // --------------------------------------------- //
   $('.notify-form').ajaxChimp({
     callback: mailchimpCallback,
-    url: 'https://besaba.us10.list-manage.com/subscribe/post?u=e8d650c0df90e716c22ae4778&amp;id=cda9d4d43c'
+    url: 'https://amina.us20.list-manage.com/subscribe/post?u=7de47cf780587d18f96e02296&amp;id=bd992bb94a'
   });
+
+
+
+
+
 
   function mailchimpCallback(resp) {
     if(resp.result === 'success') {
