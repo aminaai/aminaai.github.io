@@ -7,10 +7,10 @@
     <meta charset="utf-8">
 
     <!-- Page Title-->
-    <title>Amina.ai - Your Digital Health Companion</title>
+    <title>Amina.ai - Your Digital Mental Health Companion</title>
 
     <!-- Meta Tags-->
-    <meta name="description" content="Amina.ai - Your charming AI digital companion">
+    <meta name="description" content="Amina.ai - Your charming AI mental health companion">
     <meta name="keywords" content="Artificial intelligence, mental health, africa, mental awareness, mentally aware">
     <meta name="author" content="Amina">
 
@@ -192,6 +192,10 @@
               <a href="#" class="btn btn-l btn-light-outline" id="notify-trigger">
                 <span class="btn-caption">Notify me</span>
               </a>
+
+              <!--  <a href="https://test.amina.ai" target="_blank" class="btn btn-l btn-light-outline" >
+                <span class="btn-caption">Take Free Mental Health Assessment</span>
+              </a> -->
               <!-- Headline Content End -->
 
             </div>
@@ -216,10 +220,10 @@
             <!-- Color Layer End -->
 
             <!-- Countdown Start-->
-            <div class="countdown">
+          <!--   <div class="countdown">
               <div id="countdown">180</div>
               <span class="help-text">Days to Launch</span>
-            </div>
+            </div> -->
             <!-- Countdown End-->
 
           </div>
@@ -610,6 +614,43 @@
     <script type="text/javascript" src="js/maps/map-color-1.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiB9DoylyTOkYQ-u_9h-6dKQj5KUpoiUo"></script>
     <!-- Load Scripts End-->
+
+
+    <!-- chatbot script --> 
+
+    <script>
+  var div = document.createElement('div');
+  div.className = 'fb-customerchat';
+  div.setAttribute('page_id', '2105847173075756');
+  div.setAttribute('ref', '');
+  document.body.appendChild(div);
+  window.fbMessengerPlugins = window.fbMessengerPlugins || {
+    init: function () {
+      FB.init({
+        appId            : '1678638095724206',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v3.0'
+      });
+    }, callable: []
+  };
+  window.fbAsyncInit = window.fbAsyncInit || function () {
+    window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
+    window.fbMessengerPlugins.init();
+  };
+  setTimeout(function () {
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  }, 0);
+</script>
+
+    <!-- end of chatbot--> 
 
   </body>
 
